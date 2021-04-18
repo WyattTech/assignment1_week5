@@ -1,0 +1,111 @@
+
+body{
+    margin: 0;
+    padding-bottom: 69%;
+   /* width: 900vmax;
+    max-height: 1300vmax; */
+    background:url(../css/imgs/bg-desktop.svg) repeat hsl(257, 40%, 49%);
+    background-repeat:no-repeat, no-repeat;
+    background-position:inherit, inherit;
+    background-attachment: fixed;
+    background-size: contain;
+    background-blend-mode:overlay;
+    background-size: cover; 
+    @media screen and (max-width:1440px) and (min-width: 353px) {
+        background-color: #EE81EE;
+    }
+}
+
+
+.mainWrapper {
+    display: block;
+    position: relative;
+    margin: 150px 75px 150px 150px;
+    padding: 18px 5px 18px;
+    box-sizing: border-box;
+   
+}
+
+header {
+    position: relative;
+    display: block;
+    top: -85px;
+    left: -85px;
+    object-fit: scale-down;
+    
+}
+
+.mockup {
+
+    position: relative;
+    display: block;
+    top: 20px;
+    left: -85px; 
+
+}
+
+.sect {
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    align-content:center;
+    flex-wrap: wrap;
+    text-align: right;
+    top: -485px;
+    left: 250px;
+    @media(max-width: 1440px;) {
+        display: block;
+    }
+   /* margin-left: 20px;
+    margin-right:18px; */
+}
+
+h1 {
+    display:inline-block;
+    position: relative;
+    text-align: justify;
+    line-height: 1.6sem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    color: rgba(245, 245, 245, 0.89); 
+    overflow-wrap: break-word;  
+}
+
+p {
+    display:inline-blockoverflow-wrap: break-word;;
+    position: relative;
+    text-align: justify;
+    align-content: center;
+    line-height: 1.9em;
+    font-size: 28px;
+    word-break: break-all;
+    color: rgba(245, 245, 245, 0.89);
+    overflow-wrap: break-word;
+}
+
+button {
+
+    border-radius: 45px;
+    width: 345px;
+    height: 90px;
+    padding: 25px; 
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(163, 156, 156, 0.911); 
+}
+
+.foot {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 1355px;
+    bottom: 305px;
+}
+
+i {
+    width: 75px;
+    height: 100px;
+    font-size: 45px;
+    opacity: 0.4;
+    color:  rgba(245, 245, 245, 0.89);  
+}
