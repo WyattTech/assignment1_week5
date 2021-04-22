@@ -13,6 +13,7 @@ background-blend-mode:overlay;
 background-size: cover; 
 }
 
+
 header {
     display: flex;
     align-items: center;
@@ -20,7 +21,8 @@ header {
 
 main {
     display: flex;
-    margin: 55px 38px;
+    margin: 55px 55px;
+    text-align: justify;
    
 }
 
@@ -40,6 +42,7 @@ main {
 }
 
 .h1 {
+    text-align: justify;
     line-height: 1.2em;
     padding: 10px 40px;
     font-family: 'Poppins', sans-serif;
@@ -62,27 +65,25 @@ main {
     color: rgba(245, 245, 245, 0.637);
 
 }
-    button {
+button {
 
         border: 1px solid;
         border-radius: 45px;
         box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.582);
         width: 125px;
         height: 36px;
-        padding: auto;
         margin: 8px 25px;
         font-size: 14px;
         font-family: 'Poppins', sans-serif;
         color: rgba(163, 156, 156, 0.911);
        
-    }
-
+}
     
 footer {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin: auto;
+    
 }
 
 i {
@@ -90,27 +91,38 @@ i {
     margin: 8px;
     align-items: flex-end;
     justify-content: flex-end;
-    font-size: 22px;
+    font-size: 23px;
     opacity: 0.4;
     color: rgba(245, 245, 245, 0.89); 
    
 }
 
-@media screen and (max-width: 600px) {
+button:focus {
+    background-color: hsl(300, 77%, 88%);
+    font-weight: 900;
+  }
 
+ i:hover {
+    background-color: hsl(300, 69%, 71%);
+  }
+
+@media (max-width: 768px)  {
     body{
-    background:url(../css/imgs/bg-desktop.svg) repeat  hsl(303, 52%, 41%);
+    background:url(../css/imgs/bg-mobile.svg) repeat hsl(257, 40%, 49%);
     background-repeat:no-repeat, no-repeat;
     background-attachment: fixed;
     background-blend-mode:overlay;
     background-size: cover;
     }
-
     main {
-       display: flex;
+     
        flex-direction: column;
        justify-content: left;
-
+       display: flex;
+       justify-content: center; 
+       align-items: center; 
+       align-content: center;
+       text-align: center;
    }
 
    .logo {
@@ -123,31 +135,42 @@ i {
 
 .items {
     overflow: hidden;
-    width: 85%;
+    width:100%;
 }
    .h1 {
        font-size: 24px;
+       text-align: center;
    }
 
    p {
        font-size: 15px;
        line-height:  1.1em; 
+       text-align: center;
    }
 
    button {
-        font-size: 11.5px;
-        align-content: center;
-        width: 130px;
-        height: 30px;
-        padding: auto;
+    
+    border: 1px solid;
+    border-radius: 45px;
+    box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.582);
+    width: 155px;
+    height: 36px;
+    padding: auto;
+    margin: 24px 25px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(163, 156, 156, 0.911);
    }
    
    footer {
        display: flex;
-       flex-direction: row;
+       flex-direction:row;
        justify-content: center;
-       font-size: 12.5px;
+       text-align: center;
        align-self: center;
+       font-size: 16.5px;
+       top: 55%;
+       
    }
    
 }
